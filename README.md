@@ -40,10 +40,11 @@ If step 5 says Orbi isn't allowed to control other apps even though the switch l
 **Safe by design**
 - If you picked a conversation and the Claude app isn't showing it, Orbi types **nothing** and tells you why.
 - Orbi only types the messages you send it, and only into the Claude app.
-- Switching to another conversation uses the Claude app's own link and may not work in every version. If it doesn't, Orbi stops and sends nothing.
+- Switching to another conversation uses the Claude app's own link. It worked in testing, but a future version of the app could change that. If switching fails, Orbi stops and sends nothing.
 
 **Good to know**
 - The Claude app has to be running. Orbi doesn't open it for you.
+- Orbi's Enter works like your own: if Claude is in the middle of an answer when you send, that answer is **interrupted** and your new message is handled instead. Wait for Claude to finish if you don't want that.
 - If macOS says Orbi isn't allowed to control other apps, even though the switch looks on, the permission belongs to an older copy of the app. Select **Claude Bridge** in the Accessibility list, press **"−"** to remove it, then add it again. This can be needed after an update.
 - It works by controlling a window, so a future change to the Claude app's layout could break it. **Save Claude app layout** in the menu writes a description of the window that makes such a break easy to diagnose.
 
