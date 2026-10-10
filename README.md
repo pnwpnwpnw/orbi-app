@@ -5,13 +5,14 @@ A small white bot that lives in the corner of your Mac's screen, so you can chat
 **Download:** [latest release](../../releases/latest)
 
 ## What it does
-- **Control + Command + Space** opens a small quick-ask bar from any app (version 0.4.0 and newer): Orbi, an input box, the model and the folder. Type, press Return, and the answer shows in Orbi's speech bubble. You can change the shortcut in Settings.
+- **Control + Command + Space** opens a small quick-ask bar from any app: Orbi, an input box, the model and the folder. Type, press Return, and the answer shows in Orbi's speech bubble. The small chat button in the bar lets you choose which chat the message goes to: a new one, or one of your 5 latest. You can change the shortcut in Settings.
 - **Click Orbi** to ask Claude something from the desktop. A speech bubble shows what Claude is doing, and short replies appear right there.
-- **Click the menu-bar icon** to open the full chat window, with your saved conversations, chat bubbles and a light or dark look that follows your Mac.
+- **Click the menu-bar icon** to open the full chat window, with your saved conversations, a light or dark look that follows your Mac, and replies that appear as Claude writes them, formatted (bold, lists, code blocks, links). The steps Claude takes ("Read Sessions.swift") stay in the chat as small pills. Hover a chat in the title menu and click its trash icon to delete it. Click anywhere else and the window goes away.
+- **Orbi acts out what Claude is doing:** it scans while reading, taps while editing, peers around while searching, hunkers down while running a command and bounces while writing the reply.
 - **Drag a file or photo onto Orbi** and it eats it. The file goes along with your next message.
 - Pick the model (Fable, Opus, Sonnet, Haiku) from the label next to the input.
 - Orbi walks around your screen. Click it and use the Move / Stay pill to turn that off.
-- **Right-click Orbi** for quick switches. Today there is one: **Send to Claude app** (below).
+- **Right-click Orbi** and a fan of quick settings swings out beside it: **Send to Claude app**, **Show name**, **Auto updates** (click to switch on or off; orange is on) and **Model** (click to step through the models).
 - **Settings:** right-click the menu-bar icon and choose **Settings…** (version 0.3.0 and newer). Pick where Orbi parks, how fast it walks, its name, the shortcut, the folder new chats start in, and rename or delete saved conversations.
 - **Send to the Claude app (experimental, version 0.3.0 and newer).** Type into a conversation open in the Claude desktop app, and pick which one. See [below](#send-messages-to-the-claude-app-experimental).
 
@@ -26,7 +27,7 @@ From version 0.3.0, Orbi can also type your message into the **Claude desktop ap
 
 **Set it up (once)**
 1. Install Orbi in your **Applications** folder and open it, and make sure the **Claude app** is installed and running.
-2. Right-click Orbi itself and click the **Send to Claude app** pill, so it lights up. (The same switch is in **Settings…**.) A dialog explains the permission; click **Open the permission prompt**.
+2. Right-click Orbi itself and click the **Send to Claude app** pill, so it turns orange. (The same switch is in **Settings…**.) A dialog explains the permission; click **Open the permission prompt**.
 3. macOS opens **System Settings > Privacy & Security > Accessibility**. Switch **Orbi** on. If it isn't in the list yet, click **"+"**, choose **Orbi** in your Applications folder and switch it on. macOS may ask for your password.
 4. In the Claude app, open the conversation you want to talk to and leave its window open (not minimized).
 5. **Test it:** press Control + Command + Space (or click Orbi), type "hello from Orbi" and press Enter. The Claude app flashes to the front, the message appears in the conversation, and you land back where you were.
