@@ -12,8 +12,11 @@ A small white bot that lives in the corner of your Mac's screen, so you can chat
 - **Drag a file or photo onto Orbi** and it eats it. The file goes along with your next message.
 - Pick the model (Fable, Opus, Sonnet, Haiku) from the label next to the input.
 - Orbi walks around your screen. Click it and use the Move / Stay pill to turn that off.
-- **Right-click Orbi** and a fan of quick settings swings out beside it: **Send to Claude app**, **Show name**, **Auto updates** (click to switch on or off; orange is on) and **Model** (click to step through the models).
-- **Settings:** right-click the menu-bar icon and choose **Settings…** (version 0.3.0 and newer). Pick where Orbi parks, how fast it walks, its name, the shortcut, the folder new chats start in, and rename or delete saved conversations.
+- **Right-click Orbi** and a fan of quick settings swings out beside it, three pills at a time (scroll with a trackpad, mouse wheel or the arrow keys for the rest): **Send to Claude app**, **Show name**, **Watch Claude app**, **Permission alerts**, **Sounds**, **Auto updates** (click to switch on or off; orange is on), **Model** (click to step through the models) and **Full settings…**.
+- **Watch the Claude app (optional, version 0.4.5 and newer).** Switch on **Watch Claude app** and Orbi acts out what Claude is doing in your Claude app conversations: all the active ones, or only the one you pick in Settings, even with several working at once. The bubble shows the latest step, there is a hop and a chime when one finishes, and a click on the bubble jumps to that conversation. Orbi only reads each conversation's own log; it never writes to it.
+- **Permission alerts (optional, version 0.4.5 and newer).** Orbi can speak up the moment Claude asks for your permission, with a chime, a bounce and what it wants to do, until you answer. Turn it on with the **Permission alerts** pill or in Settings. It asks first, then adds a small note to Claude's settings that only passes the request to Orbi; it can't approve, deny or delay anything, and your other settings are kept (a backup is saved next to the file). Turn it off any time.
+- **Sound effects (version 0.4.5 and newer).** Soft sounds for clicks, the quick-ask bar, sending, replies, errors, the right-click fan and eating. They are made inside the app, kept quiet, and switched off with the **Sounds** pill or in Settings.
+- **Settings:** right-click the menu-bar icon and choose **Settings…**, or use **Full settings…** in the right-click fan (version 0.3.0 and newer; a new dark look in 0.4.5). Pick where Orbi parks, how fast it walks, its name, the shortcut, the folder new chats start in, sounds, watching the Claude app, permission alerts, and rename or delete saved conversations.
 - **Send to the Claude app (experimental, version 0.3.0 and newer).** Type into a conversation open in the Claude desktop app, and pick which one. See [below](#send-messages-to-the-claude-app-experimental).
 
 ## Install
@@ -61,7 +64,7 @@ From version 0.2.0 on, Orbi updates itself. About once a day it checks this page
 If you have version 0.1.0, install the latest release by hand once; it can't update itself. Your conversations and settings are kept.
 
 ## Privacy
-No servers, no accounts, no tracking. Everything goes through the `claude` tool on your own Mac. The only thing Orbi contacts itself is GitHub, about once a day, to see whether a newer version exists. Conversations are saved only on your Mac, in `~/Library/Application Support/ClaudeBridge/`.
+No servers, no accounts, no tracking. Everything goes through the `claude` tool on your own Mac. The only thing Orbi contacts itself is GitHub, about once a day, to see whether a newer version exists. Watching the Claude app and permission alerts stay on your Mac: Orbi reads the conversation logs Claude Code already keeps there, and the optional permission note is a small file in `~/Library/Application Support/ClaudeBridge/`. Conversations are saved only on your Mac, in `~/Library/Application Support/ClaudeBridge/`.
 
 ## License
 Orbi is free to use and to share. It is **not open source**: the source code is not published. Provided as is, without warranty.
